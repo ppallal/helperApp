@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!--Bootstrap-->
+	    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	
+		<!--Stylesheets-->
+		<link rel="stylesheet" href="mycss/index.css"/>
+		
+		<!--Scripts-->
+		<script type="text/javascript" src="myjs/index.js"></script>
+	</head>
+	
+	
+	<body style="font-family : ubuntu"  onload= "init()">
+		
+		<!--Main Back Container-->
+		<div class="container-fluid" style="margin-top : 2%">
+			<ul class="nav nav-pills nav-justified">
+				  <li ><a class="btn btn-danger" onclick="emmaHelper()" style="height : 200px" href="#"><span style="font-size:30px;margin-top:30%;">Dead Emergency<span></a></li>
+			</ul>
+		</div>
+		
+		<div class="row container-fluid">
+			<div class="col-sm-1 col-md-1 col-lg-1"></div>
+			<div class="col-sm-10 col-md-10 col-lg-1">
+				<ul class="nav nav-pills nav-justified">
+				  <li class="active"><a href="#" onclick="document.getElementById('indata').style.display='block';">Emergeny Post</a></li>
+					<!---->
+					<div class="col-lg-6" id="indata" style="display : none">
+						<div class="input-group">
+						  <input type="text" id="emerData" class="form-control"/>
+						  <span class="input-group-btn">
+							<button class="btn btn-default" onclick="sendEmergency()" type="button"><span class="glyphicon glyphicon-send"></span></button>
+						  </span>
+						</div><!-- /input-group -->
+					  </div><!-- /.col-lg-6 -->
+					
+				  
+				  <li><a href="#">Configure Settings</a></li>
+				  
+				  <li id="debug"></li>
+				  
+				</ul>
+			</div>
+			<div class="col-sm-1 col-md-1 col-lg-1"></div>
+			
+		</div>
+		
+		
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+			<h3 class="panel-title">Help Needed</h3>
+		  </div>
+		  <div class="panel-body">
+			<ul id="helpHolder" class="nav nav-pills nav-justified">
+				  
+				  
+				  
+			</ul>
+		  </div>
+		</div>
+		
+		
+		<!--JQuery-->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<!--Bootstrap JS-->
+	    <script src="js/bootstrap.min.js"></script-->
+
+	</body>
+
+	
+	
+</html>
