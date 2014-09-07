@@ -13,7 +13,7 @@ $result = mysqli_query($con,$quer);
 while($row = mysqli_fetch_array($result)) 
 {
   echo $row['no'];
-  echo "<br>";
+  $result = mysqli_query($con,$quer);
 }
 echo "out";
 
